@@ -9,6 +9,7 @@ import {ProfileComponent} from './profile/profile.component';
 import {ActivityComponent} from './users/activity/activity.component';
 import {SetttingsComponent} from './users/setttings/setttings.component';
 import {UserComponent} from './user/user.component';
+import {AddUserComponent} from './add-user/add-user.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -29,6 +30,7 @@ const routes: Routes = [
     path: 'login', loadChildren: () =>
       import('./login/login.module').then((m) => m.LoginModule),
   },
+  {path: 'add', component: AddUserComponent},
   {path: '**', component: NotFoundComponent}
 ];
 

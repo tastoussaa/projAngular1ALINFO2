@@ -7,7 +7,7 @@ import {AppComponent} from './app.component';
 import {ServerComponent} from './server/server.component';
 import {ServersComponent} from './servers/servers.component';
 import {HomeComponent} from './home/home.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NavBarComponent} from './nav-bar/nav-bar.component';
 import {UsersComponent} from './users/users.component';
 import {NotFoundComponent} from './not-found/not-found.component';
@@ -15,6 +15,7 @@ import {ProfileComponent} from './profile/profile.component';
 import {SetttingsComponent} from './users/setttings/setttings.component';
 import {ActivityComponent} from './users/activity/activity.component';
 import {UserComponent} from './user/user.component';
+import {AddUserComponent} from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +30,14 @@ import {UserComponent} from './user/user.component';
     SetttingsComponent,
     ActivityComponent,
     UserComponent,
+    AddUserComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]
